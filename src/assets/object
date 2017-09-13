@@ -1,0 +1,30 @@
+[
+		{
+			"id": 1,
+			"firstName": "Umair",
+			"lastName": "Mohammady",
+			"email": "umohammady@nisum.com",
+			"phone": "(714)366-0032",
+			"title": "Programming Intern", 
+			"description": "This internship is a developing positing at Nisum Technologies. The program is meant for students to be able to develop web applications as well as be able to understand the DevOps process.",
+			"qualifications": "Must be a Computer Science student",
+			"salary": 12,
+			"jobType": "Internship",
+			"apply": "Apply with email, phone or google",
+			"location": "Fremont, CA"
+		},
+		{
+			"id": 2,
+			"firstName": "Sameer",
+			"lastName": "Khan",
+			"email": "mskhan@nisum.com",
+			"phone": "(909)999-9999",
+			"title": "Project Manager", 
+			"description": "This sentence is just a test to see if the api is working.",
+			"qualifications": "Must be super smart",
+			"salary": 40,
+			"jobType": "Part Time",
+			"apply": "Apply with email, phone or google",
+			"location": "Fremont, CA"
+		}			
+]

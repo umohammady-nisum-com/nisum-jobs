@@ -1,0 +1,53 @@
+
+<div class="container" >
+
+    <div class="row">
+
+
+        <div class="col-sm-8 blog-main">
+
+
+            <div class="blog-post" *ngIf="jobListing" >
+                <h2>{{jobListing.title}}</h2>
+                <p class="blog-post-meta">{{jobListing.dates}} by {{jobListing.firstName}} {{jobListing.lastName}}</p>
+                <p class="blog-post-meta">{{jobListing.jobType}}, {{jobListing.location}}</p>
+
+                <h4>Job Description</h4>
+                <p>{{jobListing.description}}</p>
+                
+                <hr>
+                <h4>Salary</h4>
+                <p>{{jobListing.salary}}/hr</p>
+                <hr>
+                
+                <h4>Qualifications</h4>
+                <li>{{jobListing.qualifications}}</li>
+                <hr>
+
+                <h4>Job Type</h4>
+                <p>{{jobListing.jobType}}</p>
+                <hr>
+
+                
+            </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+
+        <div class="col-sm-offset-1 col-sm-3 blog-sidebar">
+
+            <div class="sidebar-module sidebar-module-inset" *ngIf="jobListing" >
+                <h5>How To Apply</h5>
+                <p>{{jobListing.apply}}</p>
+                <h5>Contact Info</h5>
+                <p>Email: {{jobListing.email}}</p>
+                <p>Phone: {{jobListing.phone}}</p>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+

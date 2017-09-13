@@ -1,0 +1,57 @@
+
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+.container {
+  max-width: 60rem;
+}
+
+/*
+ * Main column and sidebar layout
+ */
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 1rem;
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 12pt;
+
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+
+}
+
+.blog-sidebar{
+  overflow-wrap:break-word;
+
+}
+
+.sidebar-module-inset {
+  padding: 1.5rem;
+  background-color: #f5f5f5;a
+  border-radius: .25rem;
+  font-size: 12pt;
+
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+h2, .h2 {
+  font-size: 1.75rem;
+}

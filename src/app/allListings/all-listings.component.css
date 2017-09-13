@@ -1,0 +1,24 @@
+.job-listing
+{
+  text-align: left;
+  padding: 5px 20px 0px;
+  margin: 5px 0px 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.button
+{
+  width: 100%;
+  background-color: #e6f2ff; /* pink */
+
+  margin: 0px 0px 10px;
+  border: 1px solid BLACK;
+
+}
+
+
+button:hover {
+  background: #ffe5f9
+}
+

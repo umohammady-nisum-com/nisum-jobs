@@ -1,0 +1,112 @@
+
+<div class="container">
+	<div class="col-md-10 text-center">
+    	<div class="form-area">  
+        	
+
+            <form (ngSubmit)="onSubmit()" role="form">
+        		<br style="clear:both">
+                    <h3 style="margin-bottom: 50px; ">New Job Listing</h3>
+    				<div class="form-group">
+						<input [(ngModel)]="jobListing.firstName"
+                                     required
+                                     #firstName="ngModel"
+
+                        type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+					</div>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="jobListing.lastName"
+                                     required
+                                     #lastName="ngModel"
+                        type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+
+					<div class="form-group">
+						<input [(ngModel)]="jobListing.email"
+                                     required
+                                     #email="ngModel"
+
+                         type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+					</div>
+					<div class="form-group">
+						<input [(ngModel)]="jobListing.phone"
+                                     required
+                                     #phone="ngModel"
+
+                                     type="text" class="form-control" id="mobile" name="phone" placeholder="Phone Number" required>
+					</div>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="jobListing.location"
+                                     required
+                                     #location="ngModel"
+
+                                     type="text" class="form-control" id="mobile" name="location" placeholder="Location" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="jobListing.company"
+                                     required
+                                     #company="ngModel"
+
+                                     type="text" class="form-control" id="mobile" name="company" placeholder="Company" required>
+                    </div>
+
+					<div class="form-group">
+						<input [(ngModel)]="jobListing.title"
+                                     required
+                                     #title="ngModel"
+                        type="text" class="form-control" id="title" name="title" placeholder="Job Title" required>
+					</div>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="jobListing.jobType"
+                                     required
+                                     #jobType="ngModel"
+
+                        type="text" class="form-control" id="type" name="JobType" placeholder="Job Type" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input [(ngModel)]="jobListing.salary"
+                                     required
+                                     #salary="ngModel"
+
+                        type="text" class="form-control" id="salary" name="salary" placeholder="Salary" required>
+                    </div>
+
+                    <div class="form-group">
+                    <input [(ngModel)]="jobListing.apply"
+                                     required
+                                     #apply="ngModel" 
+                                     name="apply" class="form-control" type="textarea" id="apply" placeholder="How to Apply" cols = 25 rows="10">
+                  
+                    </div>
+
+                    <div class="form-group">
+                    <input [(ngModel)]="jobListing.description"
+                                     required
+                                     #description="ngModel"
+
+                    name="description" class="form-control" type="textarea" id="description" placeholder="Job Description"  cols = 50 rows="15">
+                   
+                    </div>
+
+                    <div class="form-group">
+                    <input [(ngModel)]="jobListing.qualifications"
+                                     required
+                                     #qualifications="ngModel"
+
+                     name="qualifications" class="form-control" type="textarea" id="Qualification" placeholder="Qualifications" cols = 50 rows="15">
+                   
+                    </div>
+                    
+                    <div class="row">
+	        		     <button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
+                         <button type="button" id="cancel" name="cancel" class="btn btn-primary" (click)="cancel()">Cancel</button>
+                    </div>
+	       </form>
+    	</div>
+	</div>
+</div>
