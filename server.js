@@ -22,4 +22,6 @@ app.listen(process.env.PORT || 8000);
 // For all GET requests, send back index.html
 // so that PathLocationStrategy can be used
 //Routes 
-app.use('/api', require('./rest-api-server/routes/api'));
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
+});
