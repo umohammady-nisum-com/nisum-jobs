@@ -43,11 +43,11 @@ export class NewListing implements OnInit {
 	}
 
 	isValid(){
-		if(this.jobListing.firstName=="" || this.jobListing.lastName=="" || this.jobListing.email=="" ||this.jobListing.phone!=""
+		if(this.jobListing.firstName=="" || this.jobListing.lastName=="" || this.jobListing.email=="" ||this.jobListing.phone==""
 			|| this.jobListing.title=="" || this.jobListing.description==""|| this.jobListing.qualifications=="" 
 			|| this.jobListing.company=="" || this.jobListing.salary==null || this.jobListing.jobType==""
 			|| this.jobListing.apply=="" || this.jobListing.location=="")
-		return false
+		return false;
 	return true;
 	}
 

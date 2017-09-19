@@ -64,10 +64,6 @@ app.post("/api/listings", function(req, res) {
   var newListing = req.body;
   newListing.createDate = new Date();
 
-  if (!req.body.name) {
-    handleError(res, "Invalid user input", "Must provide a name.", 400);
-  }
-
   db.collection(LISTINGS_COLLECTION).insertOne(newListing, function(err, doc) {
     if (err) {
       handleError(res, err.message, "Failed to create new contact.");
@@ -104,6 +100,10 @@ app.delete("/api/listings/:id", function(req, res) {
   });
 });
 
-//app.use('/api', require('./rest-api-server/routes/api'));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
+
 
 
