@@ -1,4 +1,4 @@
-# job-board
+# nisum-jobs
 This is the Nisum intern project.
 
 # Description: 
