@@ -8,9 +8,6 @@
             <h2>Job Offers</h2>
             <hr>
 
-            <!--input type="text" [(ngModel)]="search">
-                <div *ngFor = "let listing of jobListings |filter:search"-->
-
             <button [routerLink]="['../listing/', listing._id]" class="button" *ngFor="let listing of jobListings">
                 <div class="job-listing">
                     <h4>{{listing.title}}</h4>

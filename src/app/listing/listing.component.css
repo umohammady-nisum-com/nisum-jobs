@@ -1,6 +1,18 @@
+pre {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 12pt;
+  background-color: transparent;
+  border: 0px solid transparent;
+  padding: 0px 0px 0px;
+  margin: 0px 0px 1.25px;
 
+}
 
+.new-line{
+      white-space: pre-wrap;
 
+}
 /*
  * Override Bootstrap's default container.
  */
@@ -45,6 +57,8 @@
   background-color: #f5f5f5;a
   border-radius: .25rem;
   font-size: 12pt;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
 
 }
 .sidebar-module-inset p:last-child,

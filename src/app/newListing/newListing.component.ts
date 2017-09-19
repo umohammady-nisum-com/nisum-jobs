@@ -21,7 +21,7 @@ export class NewListing implements OnInit {
 	ngOnInit(){
 
 	this.jobListing = {
-		firstName: '',
+		firstName: null,
 		lastName: '',
 		email: '',
 		phone: '',
@@ -42,9 +42,26 @@ export class NewListing implements OnInit {
 		this.router.navigate(['allListings'])
 	}
 
+	isValid(){
+		if(this.jobListing.firstName=="" || this.jobListing.lastName=="" || this.jobListing.email=="" ||this.jobListing.phone!=""
+			|| this.jobListing.title=="" || this.jobListing.description==""|| this.jobListing.qualifications=="" 
+			|| this.jobListing.company=="" || this.jobListing.salary==null || this.jobListing.jobType==""
+			|| this.jobListing.apply=="" || this.jobListing.location=="")
+		return false
+	return true;
+	}
+
 	onSubmit(){
-		this.appService.saveData(this.jobListing)
-		this.router.navigate(['allListings'])
+		if(this.isValid())
+		{
+			alert("Hello " + this.jobListing.firstName + "\nYour Job: " + this.jobListing.title + " has been posted.\nThank You!")
+			this.appService.saveData(this.jobListing)
+			this.router.navigate(['allListings'])
+			location.reload()
+		}
+		else {
+			alert ('Form Incomplete, Please fill out the whole form.')
+		}
 	}
 
 }

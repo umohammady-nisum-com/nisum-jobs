@@ -7,7 +7,7 @@ import { DataRouteActivator } from '../services/route-activator.service'
 
 export const appRoutes:Routes = [
 
-	{ path: 'allListings', component: AllListings },
+	{ path: 'allListings', component: AllListings, canActivate: [DataRouteActivator] },
 	{ path: 'listing/:id', component: Listing, canActivate: [DataRouteActivator] },
 	{ path: 'newListing', component: NewListing },
 	{ path: '404', component: Error404Component},

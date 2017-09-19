@@ -56,8 +56,6 @@ app.get("/api/listings", function(req, res) {
       handleError(res, err.message, "Failed to get contacts.");
     } else {
       res.status(200).json(docs);
-      console.log('success');
-
     }
   });
 });
@@ -66,12 +64,15 @@ app.post("/api/listings", function(req, res) {
   var newListing = req.body;
   newListing.createDate = new Date();
 
+  if (!req.body.name) {
+    handleError(res, "Invalid user input", "Must provide a name.", 400);
+  }
+
   db.collection(LISTINGS_COLLECTION).insertOne(newListing, function(err, doc) {
     if (err) {
       handleError(res, err.message, "Failed to create new contact.");
     } else {
-      return res.status(201).json(doc.ops[0]);
-      console.log('success');
+      res.status(201).json(doc.ops[0]);
     }
   });
 });

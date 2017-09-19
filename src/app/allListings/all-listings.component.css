@@ -10,7 +10,7 @@
 .button
 {
   width: 100%;
-  background-color: #e6f2ff; /* pink */
+  background-color: #EFFDFF; /* pink */
 
   margin: 0px 0px 10px;
   border: 1px solid BLACK;
@@ -19,6 +19,6 @@
 
 
 button:hover {
-  background: #ffe5f9
+  background: #FFF1EF
 }
 

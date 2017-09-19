@@ -13,16 +13,18 @@
                 <p class="blog-post-meta">{{jobListing.jobType}}, {{jobListing.location}}</p>
 
                 <h4>Job Description</h4>
-                <p>{{jobListing.description}}</p>
+                <div class="new-line">{{jobListing.description}}</div>
+                
                 
                 <hr>
                 <h4>Salary</h4>
-                <p>{{jobListing.salary}}/hr</p>
+                <p>$ {{jobListing.salary}}/hr</p>
                 <hr>
                 
                 <h4>Qualifications</h4>
-                <li>{{jobListing.qualifications}}</li>
+                <div class="new-line">{{jobListing.qualifications}}</div>
                 <hr>
+
 
                 <h4>Job Type</h4>
                 <p>{{jobListing.jobType}}</p>
@@ -38,7 +40,7 @@
 
             <div class="sidebar-module sidebar-module-inset" *ngIf="jobListing" >
                 <h5>How To Apply</h5>
-                <p>{{jobListing.apply}}</p>
+                <div class="new-line">{{jobListing.apply}}</div>
                 <h5>Contact Info</h5>
                 <p>Email: {{jobListing.email}}</p>
                 <p>Phone: {{jobListing.phone}}</p>
