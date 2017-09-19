@@ -15,7 +15,7 @@ export class AppService {
 	url: string;
 
 	constructor(private http: Http) {
-		this.url = "http://localhost:3000/"
+		this.url = ""
 	}
 
 
