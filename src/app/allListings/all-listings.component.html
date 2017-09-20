@@ -1,5 +1,12 @@
     <div class="container">
 
+        
+         <!--   <form id="filter">
+                <label>Filter search: </label>
+                <input type="text" [(ngModel)]="term" />
+            </form> -->
+
+
         <div class="row">
 
             <div class="col-sm-8">
@@ -8,7 +15,7 @@
             <h2>Job Offers</h2>
             <hr>
 
-            <button [routerLink]="['../listing/', listing._id]" class="button" *ngFor="let listing of jobListings">
+            <button [routerLink]="['../listing/', listing._id]" class="button" *ngFor="let listing of jobListings | filter:term">
                 <div class="job-listing">
                     <h4>{{listing.title}}</h4>
                     <div align="left">{{listing.company}}</div> 

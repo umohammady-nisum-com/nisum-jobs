@@ -5,7 +5,7 @@ import { JobListing } from '../Models/model';
 
 import { RouterLink } from '@angular/router'
 
-
+import { FilterPipe } from '../filter/filter.pipe'
 
 @Component ({
 	templateUrl: 'all-listings.component.html',

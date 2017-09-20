@@ -17,7 +17,8 @@ import { Error404Component } from './errors/404.component'
 import { DataRouteActivator } from '../services/route-activator.service'
 import { AppService } from '../services/app.service'
 
-import { appRoutes } from './routes'
+import { appRoutes } from './routes';
+import { FilterPipe } from './filter/filter.pipe'
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { appRoutes } from './routes'
     NewListing,
     NavBar,
     Footer,
-    Error404Component
+    Error404Component,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
