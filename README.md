@@ -6,7 +6,7 @@ This is the Nisum intern project.
   
 # Getting Started 
 
-- This app makes use of some modern software and frameworks such as Node.js, Express.js, Angular 2, and MongoDB. To get started working with this app, access heroku through link http://nisum-jobs.herokuapp.com/allListings . 
+- This app makes use of some modern software and frameworks such as Node.js, Express.js, Angular 2, and MongoDB. To get started working with this app, access heroku through link http://nisum-jobs.herokuapp.com/ . 
 
 # Technologies Used
   - Node.js
